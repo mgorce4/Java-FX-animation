@@ -1,13 +1,18 @@
 package unilim.info.ihm.tp5.exo3;
 
+import java.util.Objects;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.*;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundImage;
+import javafx.scene.layout.BackgroundPosition;
+import javafx.scene.layout.BackgroundRepeat;
+import javafx.scene.layout.BackgroundSize;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-
-import java.util.Objects;
 
 public class HereWeGoApp extends Application {
     public static void main(String[] args) {
@@ -21,7 +26,7 @@ public class HereWeGoApp extends Application {
         Image defaultMarioImage = ImageLoader.loadMarioImage("droite.png", 20, 30);
         ImageView mario = new ImageView(defaultMarioImage);
         mario.setX(14);
-        mario.setY(530);
+        mario.setY(537);
 
         Image backgroundLoadedImage = new Image(Objects.requireNonNull(getClass().getResource("niveau.jpg")).toExternalForm());
         BackgroundImage backgroundImage = new BackgroundImage(
